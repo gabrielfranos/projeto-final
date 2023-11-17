@@ -1,13 +1,15 @@
-.navbar{
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+.navbar, footer{
     background-color: #242233;
 }
 
-.navbar-brand, .nav-link{
+.orange-hover{
     color: #fff;
-    transition: 0.3 s;
+    transition: 0.3s;
 }
 
-.nav-link:hover, .navbar-brand:hover{
+.orange-hover:hover{
     color:#EC6211;
 }
 .card-img-top {
@@ -58,8 +60,9 @@
     color: #EC6211;
 }
 
-.btn-secondary{
+.btn-fechar{
     background-color: #EC6211;
     border: none;
 }
 
+    
