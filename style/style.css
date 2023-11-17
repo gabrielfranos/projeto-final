@@ -17,11 +17,6 @@
 }
 .card{
     flex: 1;
-    transition: all 0.5s ease-in-out;
-}
-
-.card-img-top:hover{
-    transform: scale(1.15);
 }
 
 .card-price{
@@ -47,6 +42,10 @@
 .modal-text span{
     font-weight: normal;
     float: right;
+}
+
+.btn-outline-dark{
+    transition: 0.5s ease-in-out;
 }
 
 .btn-outline-dark:hover{
