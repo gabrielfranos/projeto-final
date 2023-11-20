@@ -9,20 +9,21 @@
     transition: 0.3s;
 }
 
+.btn-saibamais{
+    background-color: #EC6211;
+    border: none;
+}
+
+.btn-saibamais:hover{
+    background-color: #ec6111c4;
+    border: none;
+}
+
 .orange-hover:hover{
     color:#EC6211;
 }
-.card-img-top {
-    width: 100%;
-    height: 18rem;
-    object-fit: contain;
-}
-.card{
-    flex: 1;
-}
 
 .card-price{
-    float: right;
     font-size: 1.5rem;
     font-weight: bold;
     color: #EC6211;
@@ -30,11 +31,6 @@
 
 .card-link{
     text-decoration: none;
-}
-
-.card-footer{
-    display: flex;
-    justify-content: space-between;
 }
 
 .modal-text p{
@@ -63,4 +59,9 @@
 .btn-fechar{
     background-color: #EC6211;
     border: none;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: #EC6211;
+    color: #fff;
 }

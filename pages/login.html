@@ -17,7 +17,7 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container-fluid">
-        <a class="navbar-brand orange-hover" href="#">
+        <a class="navbar-brand orange-hover" href="../index.html">
           <img src="../images/logo.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-center">
           Level
           Up! Games
@@ -47,7 +47,164 @@
     </nav>
   </header>
   <main>
-    <div class="container mt-3">
+    <div class="container my-5">
+      <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+          <img class="rounded-lg-3" src="../images/screenshot.png" alt="" width="720">
+        </div>
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">        
+          <div class="d-grid gap-2 d-md-flex justify-content-md-center mb-4 mb-lg-3">
+
+            <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-login-tab" data-bs-toggle="pill" data-bs-target="#pills-login"
+                  type="button" role="tab" aria-controls="pills-login" aria-selected="true">Login</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-register-tab" data-bs-toggle="pill" data-bs-target="#pills-register"
+                  type="button" role="tab" aria-controls="pills-register" aria-selected="false">Cadastrar</button>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="pills-login" role="tabpanel">
+              <form>
+                <div class="text-center mb-3">
+                  <p>Entrar com:</p>
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="bi bi-facebook"></i>
+                  </button>
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="bi bi-google"></i>
+                  </button>
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="bi bi-twitter"></i>
+                  </button>
+                </div>
+                <div class="mb-3 form-floating">
+                  <input type="email" class="form-control" id="inputEmail" placeholder="email@email.com">
+                  <label for="inputEmail" class="form-label input">E-mail</label>
+                </div>
+                <div class=" mb-3 form-floating">
+                  <input type="password" class="form-control" id="inputPassword" placeholder="senha">
+                  <label for="inputPassword" class="form-label">Senha</label>
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="inputCheckbox">
+                  <label class="form-check-label" for="inputCheckbox">Manter-me conectado!</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Entrar</button>
+              </form>
+            </div>
+            <div class="tab-pane fade " id="pills-register" role="tabpanel">
+              <form autocomplete="on">
+                <div class="text-center mb-3">
+                  <p>Entrar com:</p>
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="bi bi-facebook"></i>
+                  </button>
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="bi bi-google"></i>
+                  </button>
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="bi bi-twitter"></i>
+                  </button>
+                </div>
+                <fieldset>
+                  <legend>Dados Pessoais</legend>
+                  <div class="form-floating mb-3">
+    
+                    <input type="text" name="nome" id="nome" required autocomplete="name" class="form-control"
+                      placeholder="Nome Completo">
+                    <label for="nome" class="form-label">Nome Completo</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="number" name="cpf" id="cpf" required class="form-control" placeholder="CPF">
+                    <label for="cpf" class="form-label">CPF</label>
+    
+                  </div>
+                  <div class="form-floating mb-3"> <input type="email" name="email" id="email" required autocomplete="email"
+                      class="form-control" placeholder="Email">
+                    <label for="email" class="form-label">Email</label>
+    
+                  </div>
+                  <div class="form-floating mb-3"> <input type="password" name="senha" id="senha" required
+                      autocomplete="new-password" class="form-control" placeholder="Senha">
+                    <label for="senha" class="form-label">Senha</label>
+    
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <legend>Endereço</legend>
+                  <div class="form-floating mb-3"> <input type="number" name="cep" id="cep" required class="form-control"
+                      placeholder="CEP">
+                    <label for="cep" class="form-label">CEP</label>
+    
+                  </div>
+                  <div class="form-floating mb-3"> <input type="text" name="endereco" id="endereco" required
+                      class="form-control" placeholder="Endereço">
+                    <label for="endereco" class="form-label">Endereço</label>
+    
+                  </div>
+                  <div class="form-floating mb-3"> <input type="text" name="complemento" id="complemento"
+                      class="form-control" placeholder="Complemento">
+                    <label for="complemento" class="form-label">Complemento</label>
+    
+                  </div>
+                  <fieldset id="cidade-estado">
+                    <div class="form-floating mb-3" id="div-cidade">
+                      <input type="text" name="cidade" id="cidade" required class="form-control" placeholder="Cidade">
+                      <label for="cidade" class="form-label">Cidade</label>
+    
+                    </div>
+    
+                    <div class="form-floating mb-3" id="div-estado">
+                      <input list="estados" name="estado" id="estado" required class="form-control" placeholder="Estado">
+                      <label for="estado" class="form-label">Estado</label>
+    
+                    </div>
+    
+                    <datalist id="estados">
+                      <option value="Al"></option>
+                      <option value="AP"></option>
+                      <option value="AM"></option>
+                      <option value="BA"></option>
+                      <option value="CE"></option>
+                      <option value="DF"></option>
+                      <option value="ES"></option>
+                      <option value="GO"></option>
+                      <option value="MA"></option>
+                      <option value="MT"></option>
+                      <option value="MS"></option>
+                      <option value="MG"></option>
+                      <option value="PA"></option>
+                      <option value="PB"></option>
+                      <option value="PR"></option>
+                      <option value="PE"></option>
+                      <option value="PI"></option>
+                      <option value="RJ"></option>
+                      <option value="RN"></option>
+                      <option value="RS"></option>
+                      <option value="RO"></option>
+                      <option value="RR"></option>
+                      <option value="SC"></option>
+                      <option value="SP"></option>
+                      <option value="SE"></option>
+                      <option value="TO"></option>
+                    </datalist>
+    
+                  </fieldset>
+                </fieldset>
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- <div class="container mt-3">
 
       <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
         <li class="nav-item" role="presentation">
@@ -194,9 +351,13 @@
           </form>
         </div>
       </div>
-    </div>
+    </div> -->
   </main>
 
+  <script>
+    const botao = document.querySelector('#pills-register-tab')
+
+  </script>
 
 </body>
 
