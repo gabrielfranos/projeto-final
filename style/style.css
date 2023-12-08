@@ -69,3 +69,20 @@
 .card-img{
     padding: 5px;
 }
+
+.itemInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#carrinhoItems{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.itemCompra{
+    display: flex;
+    justify-content: space-between;
+}
