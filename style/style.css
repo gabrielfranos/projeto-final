@@ -42,15 +42,16 @@
     float: right;
 }
 
-.btn-outline-dark{
-    transition: 0.5s ease-in-out;
+.btn-outline-warning{
+    border-color: #EC6211;
+    color: #EC6211;
 }
 
-.btn-outline-dark:hover{
-    border: none;
-    background-color: #EC6211;
-    color: #fff;
+.btn-outline-warning:hover{
+    background-color: #ec7430;
+    color: black;
 }
+
 
 .modal-title{
     color: #EC6211;
