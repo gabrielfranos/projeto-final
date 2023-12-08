@@ -27,9 +27,16 @@ btnCart.forEach(function(botao){
 function atualizaTotal(){
     let totalCar = totalCompra();
     document.getElementById('totalCarrinho').innerHTML = `Total: R$ ${totalCar}`
-    document.getElementById('carrinhoItems').innerHTML = `
-    1 x ${nomeItem}
-    `
+    const carrinhoItems = document.getElementById('carrinhoItems')
+    const itemCompra = document.createElement('p');
+    itemCompra.classList.add('itemCarrinho');
+
+    nomeCart = cart.map((x) => x.nome);
+    precoCart = cart.map((x) => x.preco);
+
+    itemCompra.innerHTML = `${nomeCart.pop()} - ${precoCart.pop()}`
+    carrinhoItems.appendChild(itemCompra)
+    
 }
 
 

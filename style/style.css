@@ -52,7 +52,6 @@
     color: black;
 }
 
-
 .modal-title{
     color: #EC6211;
 }
@@ -65,4 +64,8 @@
 .accordion-button:not(.collapsed){
     background-color: #EC6211;
     color: #fff;
+}
+
+.card-img{
+    padding: 5px;
 }
