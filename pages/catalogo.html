@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level Up! Games - Seu Pedido</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand orange-hover" href="../index.html">
+                    <img src="../images/logo.png" alt="Logo" width="60" height="60"
+                        class="d-inline-block align-text-center">
+                    Level
+                    Up! Games
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link orange-hover" href="../index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link orange-hover" href="#">Catálogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link orange-hover" href="../index.html#sobreSection">Sobre Nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link orange-hover" href="../pages/login.html">Sua Conta</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="btn btn-outline-light icon-link" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-bag"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+                    </svg> Carrinho </span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="boardGameSection" class="container mt-3 gap-2">
+            <h2 class="display-5 fw-bold lh-2 mb-3 text-center"> Board Games
+            </h2>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card mb-3 h-100" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="../images/catan.png" class="img-fluid rounded-start card-img"
+                                    alt="imagem da caixa do jogo de tabuleiro Catan, com os textos 'Catan', 'Trade, Build and Settle' e uma imagem de três camponeses ao lado de uma estrada e uma plantação de trigo">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Catan</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">Estratégia, Negociação</h6>
+                                    <p class="card-text">Colete e negocie recursos para construir a ilha de Catan neste
+                                        clássico moderno
+                                    </p>
+                                    <p class="card-price">R$ 299,90 </p>
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                                        data-bs-target="#modalCatan">
+                                        Ver Mais
+                                    </button>
+                                    <button type="button"
+                                        class="btn btnCart btn-outline-warning icon-link icon-link-hover">Adicionar ao
+                                        carrinho <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg></button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3 h-100" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="../images/ticket-to-ride.png" class="img-fluid rounded-start card-img"
+                                    alt="imagem da caixa do jogo de tabuleiro Catan, com os textos 'Catan', 'Trade, Build and Settle' e uma imagem de três camponeses ao lado de uma estrada e uma plantação de trigo">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ticket to Ride</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">Familía, Controle de Mão</h6>
+                                    <p class="card-text">Construa sua ferrovia através da América do Norte para conectar
+                                        cidades e
+                                        completar
+                                        bilhetes</p>
+                                    <p class="card-price">R$ 329,90</p>
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                                        data-bs-target="#modalTicket">
+                                        Ver Mais
+                                    </button>
+                                    <button type="button"
+                                        class="btn btnCart btn-outline-warning icon-link icon-link-hover">Adicionar ao
+                                        carrinho <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3 h-100" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="../images/dixit.png" class="img-fluid rounded-start card-img" alt="">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dixit</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">Familía, Criativo</h6>
+                                    <p class="card-text">Dê a dica perfeita para que a maioria (não todos) dos jogadores
+                                        adivinhem a carta
+                                        de
+                                        imagem surreal correta</p>
+                                    <p class="card-price">R$ 249,90</p>
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                                        data-bs-target="#modalDixit">
+                                        Ver Mais
+                                    </button>
+                                    <button type="button"
+                                        class="btn btnCart btn-outline-warning icon-link icon-link-hover">Adicionar ao
+                                        carrinho <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3 h-100" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="../images/carcassonne.png" class="img-fluid rounded-start card-img">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Carcassonne</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">Familía, Controle de Área</h6>
+                                    <p class="card-text">Molde a paisagem medieval da França, reivindicando cidades,
+                                        mosteiros e fazendas.
+                                    </p>
+                                    <p class="card-price">R$ 199,90</p>
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                                        data-bs-target="#modalCarcassonne">
+                                        Ver Mais
+                                    </button>
+                                    <button type="button"
+                                        class="btn btnCart btn-outline-warning icon-link icon-link-hover">Adicionar ao
+                                        carrinho <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3 h-100" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://cf.geekdo-images.com/S3ybV1LAp-8SnHIXLLjVqA__itemrep/img/wAMLbgihOl7dJDHnvqt7OXKEV-4=/fit-in/246x300/filters:strip_icc()/pic1534148.jpg"
+                                    class="img-fluid rounded-start card-img" alt="Pandemic Cover Artwork">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pandemic</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">Estratégia, Cooperativo</h6>
+                                    <p class="card-text">Trabalhe em equipe para conter epidemias e salvar o mundo de
+                                        pandemias mortais.
+
+
+                                    </p>
+                                    <p class="card-price">R$ 279,90
+
+                                    </p>
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                                        data-bs-target="#modalPandemic">
+                                        Ver Mais
+                                    </button>
+                                    <button type="button"
+                                        class="btn btnCart btn-outline-warning icon-link icon-link-hover">Adicionar ao
+                                        carrinho <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg></button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3 h-100" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://cf.geekdo-images.com/35h9Za_JvMMMtx_92kT0Jg__itemrep/img/EUlr4of74-i75S-jIrgNfaQ3M6Q=/fit-in/246x300/filters:strip_icc()/pic7149798.jpg"
+                                    class="img-fluid rounded-start card-img"
+                                    alt="Imagem da caixa do jogo de tabuleiro 7 Wonders, com os textos '7 Wonders', 'Build Powerful Civilizations' e ilustrações de estruturas arquitetônicas antigas.">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">7 Wonders </h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">Estratégia, Construção de
+                                        Civilizações
+                                    </h6>
+                                    <p class="card-text">Construa civilizações poderosas em um jogo de cartas que
+                                        abrange diferentes eras históricas.</p>
+                                    <p class="card-price">R$ 499,90</p>
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                                        data-bs-target="#modal7wonders">
+                                        Ver Mais
+                                    </button>
+                                    <button type="button"
+                                        class="btn btnCart btn-outline-warning icon-link icon-link-hover">Adicionar ao
+                                        carrinho <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3 h-100" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://cf.geekdo-images.com/wg9oOLcsKvDesSUdZQ4rxw__itemrep/img/IwUOQfhP5c0KcRJBY4X_hi3LpsY=/fit-in/246x300/filters:strip_icc()/pic3536616.jpg"
+                                    class="img-fluid rounded-start card-img"
+                                    alt="Imagem da caixa do jogo de tabuleiro Terraforming Mars, com os textos 'Terraforming Mars', 'Develop the Red Planet' e representações de colônias e tecnologias marcianas.                ">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Terraforming Mars</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">Estratégia, Construção de Mundo
+                                    </h6>
+                                    <p class="card-text">Transforme Marte, desenvolvendo projetos e recursos para
+                                        torná-lo habitável.
+
+                                    </p>
+                                    <p class="card-price">R$ 349,90
+
+                                    </p>
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                                        data-bs-target="#modalTerraforming">
+                                        Ver Mais
+                                    </button>
+                                    <button type="button"
+                                        class="btn btnCart btn-outline-warning icon-link icon-link-hover">Adicionar ao
+                                        carrinho <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3 h-100" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://cf.geekdo-images.com/F_KDEu0GjdClml8N7c8Imw__itemrep/img/e8zw8YQvQB8q8zfWkHQ48Ls920g=/fit-in/246x300/filters:strip_icc()/pic2582929.jpg"
+                                    class="img-fluid rounded-start card-img" alt="Imagem da caixa do jogo de tabuleiro Codenames, com os textos 'Codenames', 'Uncover Clues and Avoid Traps' e ilustrações intrigantes de agentes secretos.
+      
+                      ">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Codenames</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">Estratégia, Palavras</h6>
+                                    <p class="card-text">Descubra as palavras-código enquanto evita as armadilhas do seu
+                                        espião em um jogo de intriga.
+
+
+                                    </p>
+                                    <p class="card-price">R$ 159,90
+                                    </p>
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                                        data-bs-target="#modalCodenames">
+                                        Ver Mais
+                                    </button>
+                                    <button type="button"
+                                        class="btn btnCart btn-outline-warning icon-link icon-link-hover">Adicionar ao
+                                        carrinho <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3 h-100" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://cf.geekdo-images.com/aPSHJO0d0XOpQR5X-wJonw__itemrep/img/6oRLPDvy4zz3gOZM6e6NzIk8Seg=/fit-in/246x300/filters:strip_icc()/pic6973671.png"
+                                    class="img-fluid rounded-start card-img" alt="Imagem da caixa do jogo de tabuleiro Azul, com os textos 'Azul', 'Create Stunning Tile Patterns' e designs coloridos de azulejos.
+                        ">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Azul Mini</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">Estratégia, Padrões Artísticos
+                                    </h6>
+                                    <p class="card-text">Crie padrões deslumbrantes com azulejos em uma competição
+                                        artística.
+                                    </p>
+                                    <p class="card-price">R$ 189,90
+                                    </p>
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                                        data-bs-target="#modalAzul">
+                                        Ver Mais
+                                    </button>
+                                    <button type="button"
+                                        class="btn btnCart btn-outline-warning icon-link icon-link-hover">Adicionar ao
+                                        carrinho <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg></button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3 h-100" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://cf.geekdo-images.com/rwOMxx4q5yuElIvo-1-OFw__itemrep/img/NaQx3XWoNAOMDGl4AXf4nxlhHo0=/fit-in/246x300/filters:strip_icc()/pic1904079.jpg"
+                                    class="img-fluid rounded-start card-img"
+                                    alt="Imagem da caixa do jogo de tabuleiro Splendor, com os textos 'Splendor', 'Become a Renowned Merchant' e ilustrações de gemas e mercadores.                  ">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Splendor</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">Estratégia, Desenvolvimento
+                                        Econômico
+                                    </h6>
+                                    <p class="card-text">Torne-se um mercador renomado, adquirindo gemas e desenvolvendo
+                                        minas em um jogo de desenvolvimento econômico.
+
+                                    </p>
+                                    <p class="card-price">R$ 219,90
+                                    </p>
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                                        data-bs-target="#modalSplendor">
+                                        Ver Mais
+                                    </button>
+                                    <button type="button"
+                                        class="btn btnCart btn-outline-warning icon-link icon-link-hover">Adicionar ao
+                                        carrinho <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="acessorioSection" class="container mt-3 gap-2">
+            <h2 class="display-5 fw-bold lh-2 mb-3 text-center">Acessórios</h2>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card mb-3 h-100" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://m.media-amazon.com/images/I/61sYkIuchbL._AC_SX522_.jpg"
+                                    class="img-fluid rounded-start card-img"
+                                    alt="bandeja de peças em couro ecólogico vermelho com peças vermelhas">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bandeja de Peças</h5>
+                                    <p class="card-price">R$ 14,99 </p>
+                                    <button type="button"
+                                        class="btn btnCart btn-outline-warning icon-link icon-link-hover">Adicionar ao
+                                        carrinho <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3 h-100" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://m.media-amazon.com/images/I/51oiDX4s96L.__AC_SX300_SY300_QL70_ML2_.jpg"
+                                    class="img-fluid rounded-start card-img"
+                                    alt="sleeves de polipropileno em saco plástico">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sleeve Tipo Padrão</h5>
+                                    <p class="card-price">R$ 18,99 </p>
+                                    <button type="button"
+                                        class="btn btnCart btn-outline-warning icon-link icon-link-hover">Adicionar
+                                        ao
+                                        carrinho <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3 h-100" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://m.media-amazon.com/images/I/81w80pqRfwL._AC_UL320_.jpg"
+                                    class="img-fluid rounded-start card-img"
+                                    alt="bandeja de peças em couro ecólogico vermelho com peças vermelhas">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Torre de Dados</h5>
+                                    <p class="card-price">R$ 45,99 </p>
+                                    <button type="button"
+                                        class="btn btnCart btn-outline-warning icon-link icon-link-hover">Adicionar
+                                        ao
+                                        carrinho <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3 h-100" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://m.media-amazon.com/images/I/61bWKCr+ZRL._AC_SX300_SY300_.jpg"
+                                    class="img-fluid rounded-start card-img"
+                                    alt="bandeja de peças em couro ecólogico vermelho com peças vermelhas">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Top Loader</h5>
+                                    <p class="card-price">R$ 22,99 </p>
+                                    <button type="button"
+                                        class="btn btnCart btn-outline-warning icon-link icon-link-hover">Adicionar
+                                        ao
+                                        carrinho <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="modals">
+        <!-- Modal -->
+        <div class="modal fade" id="modalCatan" tabindex="-1" aria-labelledby="modalCatan-title" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modalCatan-title">Catan</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="../images/catan-board.jpg" class="w-100" alt="">
+                        <div class="modal-text">
+                            <p>Número de Jogadores: <span class>3-4</span></p>
+                            <p>Tempo de Jogo: <span>60–120 Min</span></p>
+                            <p>Idade: <span>10+</span></p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-fechar"
+                            data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary"><a class="nav-link"
+                                href="https://boardgamegeek.com/boardgame/13/catan" target="_blank">Ver no
+                                BGG</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalTicket" tabindex="-1" aria-labelledby="modalTicket-label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modalTicket-label">Ticket to Ride</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="../images/ticket-to-ride-board.png" class="w-100" alt="">
+                        <div class="modal-text">
+                            <p>Número de Jogadores: <span class>2-5</span></p>
+                            <p>Tempo de Jogo: <span>45–60 Min</span></p>
+                            <p>Idade: <span>8+</span></p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-fechar"
+                            data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary"><a class="nav-link"
+                                href="https://boardgamegeek.com/boardgame/9209/ticket-ride" target="_blank">Ver no
+                                BGG</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalDixit" tabindex="-1" aria-labelledby="modalDixit-label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modalDixit-label">Dixit</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="../images/dixit-board.jpg" class="w-100" alt="">
+                        <div class="modal-text">
+                            <p>Número de Jogadores: <span class>3-8</span></p>
+                            <p>Tempo de Jogo: <span>25-40 Min</span></p>
+                            <p>Idade: <span>8+</span></p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-fechar"
+                            data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary"><a class="nav-link"
+                                href="https://boardgamegeek.com/boardgame/39856/dixit" target="_blank">Ver no
+                                BGG</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalCarcassonne" tabindex="-1" aria-labelledby="modalCarcassonne-label"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modalCarcassonne-label">Carcassonne</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="../images/carcassonne-board.jpg" class="w-100" alt="">
+                        <div class="modal-text">
+                            <p>Número de Jogadores: <span class>2-5</span></p>
+                            <p>Tempo de Jogo: <span>30–45 Min</span></p>
+                            <p>Idade: <span>8+</span></p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-fechar"
+                            data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary"><a class="nav-link"
+                                href="https://boardgamegeek.com/boardgame/822/carcassonne">Ver no BGG</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalPandemic" tabindex="-1" aria-labelledby="modalPandemic-label"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modalPandemic-label">Pandemic</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://m.media-amazon.com/images/I/61kmB-vX+xL._AC_UF894,1000_QL80_.jpg"
+                            class="w-100" alt="">
+                        <div class="modal-text">
+                            <p>Número de Jogadores: <span class>2-4</span></p>
+                            <p>Tempo de Jogo: <span>45-60 Min</span></p>
+                            <p>Idade: <span>10+</span></p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-fechar"
+                            data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary"><a class="nav-link"
+                                href="https://ludopedia.com.br/jogo/pandemic">Ver na Ludopédia</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal7wonders" tabindex="-1" aria-labelledby="modal7wonders-label"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modal7wonders-label">7 Wonders</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="data:image/jpeg;base64,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"
+                            class="w-100" alt="">
+                        <div class="modal-text">
+                            <p>Número de Jogadores: <span class>3-7</span></p>
+                            <p>Tempo de Jogo: <span>25-45 Min</span></p>
+                            <p>Idade: <span>10+</span></p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-fechar"
+                            data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary"><a class="nav-link"
+                                href="https://ludopedia.com.br/jogo/7-wonders">Ver na Ludopédia</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalTerraforming" tabindex="-1" aria-labelledby="modalTerraforming-label"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modalTerraforming-label">Terraforming Mars</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://cdn.arstechnica.net/wp-content/uploads/2016/09/IMG_0971-800x485.jpg"
+                            class="w-100">
+                        <div class="modal-text">
+                            <p>Número de Jogadores: <span class>1-5</span></p>
+                            <p>Tempo de Jogo: <span>90-120 Min</span></p>
+                            <p>Idade: <span>12+</span></p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-fechar"
+                            data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary"><a class="nav-link"
+                                href="https://ludopedia.com.br/jogo/terraforming-mars">Ver na Ludopédia</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalCodenames" tabindex="-1" aria-labelledby="modalCodenames-label"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modalCodenames-label">Codenames </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://m.media-amazon.com/images/I/61Xq2xsHH+L._AC_UF894,1000_QL80_.jpg"
+                            class="w-100">
+                        <div class="modal-text">
+                            <p>Número de Jogadores: <span class>4-8</span></p>
+                            <p>Tempo de Jogo: <span>20-30 Min</span></p>
+                            <p>Idade: <span>8+</span></p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-fechar"
+                            data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary"><a class="nav-link"
+                                href="https://ludopedia.com.br/jogo/codenames">Ver na Ludopédia</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalAzul" tabindex="-1" aria-labelledby="modalAzul-label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modalAzul-label">Azul Mini </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://67287.cdn.simplo7.net/static/67287/sku/jogos-de-tabuleiro-e-cardgames-azul-1620245037976.jpg"
+                            class="w-100">
+                        <div class="modal-text">
+                            <p>Número de Jogadores: <span class>2-4</span></p>
+                            <p>Tempo de Jogo: <span>30-45 Min</span></p>
+                            <p>Idade: <span>8+</span></p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-fechar"
+                            data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary"><a class="nav-link"
+                                href="https://ludopedia.com.br/jogo/azul">Ver na Ludopédia</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalSplendor" tabindex="-1" aria-labelledby="modalSplendor-label"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modalTerraforming-label">Splendor </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://assetsio.reedpopcdn.com/splendor-board-game-gameplay-layout.png?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp"
+                            class="w-100">
+                        <div class="modal-text">
+                            <p>Número de Jogadores: <span class>2-4</span></p>
+                            <p>Tempo de Jogo: <span>20-30 Min</span></p>
+                            <p>Idade: <span>10+</span></p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-fechar"
+                            data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary"><a class="nav-link"
+                                href="https://ludopedia.com.br/jogo/splendor">Ver na Ludopédia</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasCart"
+        aria-labelledby="offcanvasCart">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasTitle">Carrinho</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="emptyCart">
+                <p>Não há produtos adicionados!</p>
+            </div>
+            <div id="fullCart" style="display: none;">
+                <div id="carrinho">
+
+                </div>
+                <span id="totalCarrinho" class></span>
+
+                <div id="finalizaCarrinho">
+                    <button id="btnSalvar" type="button" class="btn btn-outline-warning w-100">Fechar Pedido</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-body">
+                Produto adicionado com sucesso!
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="../scripts/script.js"></script>
+
+</body>
+
+</html>

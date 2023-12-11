@@ -1,7 +1,5 @@
 var cart = [];
 
-const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 
 const btnCart = document.querySelectorAll('.btnCart');
 const fullCart = document.getElementById('fullCart');
@@ -10,6 +8,8 @@ const btnSalvar = document.getElementById('btnSalvar');
 
 btnSalvar.addEventListener('click', function(){
     sessionStorage.setItem('valorFinal',JSON.stringify(cart));
+    window.location.href='pedido.html';
+    
 })
 
 function atualizaCart(){
@@ -46,6 +46,9 @@ btnCart.forEach(function(botao) {
             cart[itemIndex].quantidade++;
         } else {
             adicionarCart(nomeItem, precoItem);
+            const toastElement = document.getElementById('liveToast');
+            const toastInstance = new bootstrap.Toast(toastElement);
+            toastInstance.show();
         }
         atualizaTotal();
         atualizaCart();
@@ -60,7 +63,7 @@ function removeItem(index) {
 
 function atualizaTotal() {
     let totalCar = totalCompra();
-    document.getElementById('totalCarrinho').innerHTML = `Total: R$ ${totalCar}`;
+    document.getElementById('totalCarrinho').innerHTML = `<b>Total</b>: R$ ${totalCar}`;
     const carrinho = document.getElementById('carrinho');
     carrinho.innerHTML = '';
 
@@ -79,7 +82,7 @@ function atualizaTotal() {
         itemInfo.appendChild(itemQtd);
 
         const removeButton = document.createElement('button');
-        removeButton.classList.add('btn','icon-link' )
+        removeButton.classList.add('btn','icon-link')
         removeButton.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-x-circle" viewBox="0 0 16 16">
         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
         <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
@@ -102,4 +105,3 @@ function totalCompra() {
 
     return total.toFixed(2);
 }
-
