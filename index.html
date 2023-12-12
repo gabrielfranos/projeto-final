@@ -9,9 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="style/style.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+ 
 </head>
 
 <body>
@@ -37,7 +35,7 @@
               <a class="nav-link orange-hover" href="pages/catalogo.html">Catálogo</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link orange-hover" href="#sobreSection">Sobre Nós - FAQ</a>
+              <a class="nav-link orange-hover" href="#sobreSection">Sobre Nós</a>
             </li>
             <li class="nav-item">
               <a class="nav-link orange-hover" href="pages/login.html">Sua Conta</a>
@@ -58,6 +56,8 @@
     </nav>
   </header>
   <main>
+
+    <!-- carrossel de imagens principal  -->
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -87,6 +87,8 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+
+    <!-- seção de lançamentos e link para a página de produtos -->
     <section id="lancamentoSection" class="container mt-3 gap-2">
       <h1 class="display-5 fw-bold lh-1 mb-3 text-center">Lançamentos
       </h1>
@@ -145,7 +147,8 @@
       </div>
     </section>
 
-    <section id="sobreSection">
+    <!-- seção Sobre a loja -->
+    <section id="sobreSection"> 
       <div class="container col-xxl-8 px-4 py-5">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-10 col-sm-8 col-lg-6">
@@ -185,7 +188,7 @@
               buscamos oferecer opções para jogadores de todos os níveis, desde os iniciantes até os mestres
               estrategistas.</p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <a href="pages/faq.html" type="button" class="btn btn-primary btn-lg px-4 me-md-2 btn-saibamais">Saiba Mais</a>
+              <a href="pages/sobre.html" type="button" class="btn btn-primary btn-lg px-4 me-md-2 btn-saibamais">Saiba Mais</a>
 
             </div>
           </div>
@@ -197,13 +200,16 @@
   <footer class="py-3 mt-3 container-fluid">
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
       <li class="nav-item "><a href="#" class="nav-link orange-hover px-2 ">Home</a></li>
-      <li class="nav-item "><a href="#" class="nav-link orange-hover px-2 ">Lançamentos</a></li>
-      <li class="nav-item "><a href="#freteSection" class="nav-link orange-hover px-2 ">Política de Frete</a></li>
+      <li class="nav-item "><a href="pages/catalogo.html" class="nav-link orange-hover px-2 ">Catálogo</a></li>
+      <li class="nav-item "><a href="pages/sobre.html" class="nav-link orange-hover px-2 ">Sobre Nós</a></li>
       <li class="nav-item "><a href="pages/login.html" class="nav-link orange-hover px-2 ">Sua Conta</a></li>
     </ul>
     <p class="text-center text-white">&copy; 2023 Level Up! Games</p>
   </footer>
 
+<!-- utilidades!!  -->
+
+<!-- modais -->
   <div class="modals">
     <!-- Modal -->
     <div class="modal fade" id="modalCatan" tabindex="-1" aria-labelledby="modalCatan-title" aria-hidden="true">
@@ -445,7 +451,7 @@
       </div>
     </div>
   </div>
-
+<!-- offcanvas (carrinho de compras) -->
   <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasCart"
     aria-labelledby="offcanvasCart">
     <div class="offcanvas-header">
@@ -469,7 +475,7 @@
       </div>
     </div>
   </div>
-
+<!-- toast notification (adicionar carrinho) -->
   <div class="toast-container position-fixed bottom-0 end-0 p-3">
     <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
       <div class="toast-body">
@@ -478,6 +484,9 @@
     </div>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+  crossorigin="anonymous"></script>
   <script src="scripts/script.js"></script>
 </body>
 

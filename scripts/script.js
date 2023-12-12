@@ -105,3 +105,4 @@ function totalCompra() {
 
     return total.toFixed(2);
 }
+
